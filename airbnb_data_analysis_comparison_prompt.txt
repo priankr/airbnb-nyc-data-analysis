@@ -1,0 +1,118 @@
+---
+# Analysis Comparison Initial Prompt
+---
+
+# Context
+I have the results of data analysis on using four approaches (1 manual and 3 AI-assisted). I initially conducted a manual data analysis on a **Dataset**. The goal is to produce a professional-grade comparison for a **product-oriented audience** (e.g., Airbnb product and business teams).
+
+## Dataset Context
+The dataset described the Airbnb listing activity and metrics in NYC, NY for 2019. It included all the needed information to find out more about hosts, geographical availability, necessary metrics to make predictions and draw conclusions.
+
+## Approach Context
+-  **AI-assisted Analysis Approach 1**: The AI model was instructed to review the existing data analysis and draw **new conclusions** based on the results of this analysis. The goal was to reveal interesting patterns, observations, or details that were initially overlooked.  
+- **AI-assisted Analysis Approach 2**: The AI model was instructed to review the existing data analysis and dataset, and generate an **updated analysis**, using the initial analysis as a reference. The goal was to improve the *quality* of insights obtained by having the model conduct the analysis using new techniques to expand upon the insights extracted from the existing analysis.  
+- **AI-assisted Analysis Approach 3**: The AI model was instructed to review the existing dataset and generate a **new analysis** from scratch. The goal was to improve the *quality* of insights obtained by giving the model complete freedom to conduct the analysis, without being influenced by the existing analysis. 
+
+## Inputs
+- **Initial Manual Analysis**: airbnb_analysis_overview.md
+- **AI-assisted Analysis Approach 1**: airbnb_analysis_overview_v1.md
+- **AI-assisted Analysis Approach 2**: airbnb_analysis_overview_v2.md
+- **AI-assisted Analysis Approach 3**: airbnb_analysis_overview_v3.md
+
+# Task
+Analyze and compare the insights generated in each scenario. Determine the following 
+- How did the *quality* of insights in each AI approach compare to the original analysis?
+- Which approach (1, 2, or 3 yielded the greatest insight into the dataset?
+- How did the insights generated vary between the three approaches?
+
+## Outputs
+- **Overview Comparison** - A markdown file with a comprehensive comparison.
+
+# Requirements
+- Compare the three approaches, noting differences in the quality of insights of each approach.
+- Compare each of the three approaches against the initial manual analysis, noting differences in the quality of insights between each approach vs. the initial analysis. 
+- Provide a recommendation (along with supporting reasoning) for which approach should be adopted in the future. 
+- Approach 3 might be useful as a starting point, mention its benefits and limitations
+
+## Tone and Style Requirements
+* Write in a **clear, executive tone** suitable for product and business reviews.
+* Prioritize **readability and structure** — use concise paragraphs, tables, or bullet points where appropriate.
+* Avoid jargon; favor **plain, analytical English** that non-technical stakeholders can act on.
+* The final output should read like a **professional product insights report**, not a technical notebook commentary.
+
+---
+# Analysis Comparison Optimized Prompt
+---
+
+You conducted a manual data analysis on an Airbnb dataset describing **NYC listing activity and metrics (2019)**. The dataset includes host data, geographical availability, and key metrics for prediction and insights. You then repeated the analysis using **three AI-assisted approaches** with distinct goals and methodologies. The objective is to create a **professional-grade comparative report** for a **product-oriented audience** (e.g., Airbnb product and business teams).
+
+---
+
+### **Approach Definitions**
+
+| Approach            | Description                                                                              | Goal                                                         |
+| ------------------- | ---------------------------------------------------------------------------------------- | ------------------------------------------------------------ |
+| **Manual Analysis** | Your original analysis of the dataset.                                                   | Establishes baseline quality and insight depth.              |
+| **Approach 1**      | AI reviewed your existing analysis only and drew *new conclusions* from it.              | Reveal overlooked patterns or observations.                  |
+| **Approach 2**      | AI reviewed both the dataset and your original analysis to create an *updated analysis*. | Improve quality and depth of insights using refined methods. |
+| **Approach 3**      | AI analyzed only the dataset to generate a *new, independent analysis*.                  | Produce deeper insights without influence from the original. |
+
+---
+
+### **Inputs**
+
+* `airbnb_analysis_overview.md` → Manual Analysis
+* `airbnb_analysis_overview_v1.md` → Approach 1
+* `airbnb_analysis_overview_v2.md` → Approach 2
+* `airbnb_analysis_overview_v3.md` → Approach 3
+
+---
+
+### **Task**
+
+Create a **comparative analysis report** titled `airbnb_data_analysis_comparison.md` that evaluates the insight quality, originality, and practical usefulness of each approach.
+
+Address the following:
+
+1. How does the **quality of insights** differ between each AI-assisted approach and the manual analysis?
+2. Which approach generated the **most valuable, novel, or actionable insights**?
+3. What are the **notable differences in analytical depth, structure, and interpretive clarity** across the three AI models?
+4. Which approach should be adopted for **future product analytics**, and why?
+
+---
+
+### **Output Format**
+
+Produce a Markdown report with the following structure:
+
+#### **1. Executive Summary**
+
+Concise overview (3–4 paragraphs) highlighting major differences in insight quality, depth, and relevance.
+
+#### **2. Comparative Evaluation Table**
+
+| Metric              | Manual | Approach 1 | Approach 2 | Approach 3 | Comments |
+| ------------------- | ------ | ---------- | ---------- | ---------- | -------- |
+| Analytical Depth    |        |            |            |            |          |
+| Clarity of Insights |        |            |            |            |          |
+| Business Relevance  |        |            |            |            |          |
+
+#### **3. Detailed Comparison**
+
+Compare each approach against the manual baseline. Highlight differences in findings, recurring insights, and unique discoveries.
+
+#### **4. Recommendation**
+
+Identify which approach is most effective for future use. Include benefits, trade-offs, and how the approaches can complement each other.
+
+---
+
+### **Tone and Style**
+
+* Use a **professional, executive tone** suitable for product and business stakeholders.
+* Write in **complete, formal sentences** with a **clear narrative structure**.
+* Avoid technical jargon; use plain analytical English focused on **actionable insight**.
+* Keep the style concise but polished — similar to an internal **product insights review**, not a data science report.
+* Ensure smooth transitions, no abbreviations (e.g., “Approach 1” instead of “v1”), and emphasize clarity and strategic value.
+
+--- 

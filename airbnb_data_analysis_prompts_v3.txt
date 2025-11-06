@@ -1,0 +1,103 @@
+---
+# Independent Analysis Initial Prompt
+---
+
+# Context
+I have a **Dataset** that I want to analyze using Python. I want to use AI to analyze this dataset and reveal useful insights. The goal is to produce a professional-grade **Data Analysis**, and **Overview** for a **product-oriented audience** (e.g., Airbnb product and business teams).
+
+## Dataset Context
+Dataset describes the Airbnb listing activity and metrics in NYC, NY for 2019. It includes all needed information to find out more about hosts, geographical availability, necessary metrics to make predictions and draw conclusions.
+
+## Inputs
+- **Dataset**: The raw dataset → AB_NYC_2019.csv 
+
+# Task
+Review the existing dataset and conduct a comprehensive data analysis.
+
+## Outputs
+- **Python Data Analysis** - A Jupyter Notebook with the updated data analysis.
+- **Overview** - A markdown file with the updated summary of the new data analysis.
+
+
+# Requirements
+- Analyze the dataset
+- Focus on highlighting interesting patterns, connections, and observations in the data
+- Follow a structured, systematic approach, ensuring all steps are properly documented in the Jupyter Notebook along with the code. Add relevant comments to ensure readability and clarity.
+- Determine the appropriate methodology based on the dataset.
+- All analyses and visualizations should be added to the Jupyter Notebook
+- The audience for this is a product team and their stakeholders. 
+
+
+## Tone and Style Requirements
+
+When adding markdown text:
+
+* Write in a **clear, executive tone** suitable for product and business reviews.
+* Prioritize **readability and structure** — use concise paragraphs, tables, or bullet points where appropriate.
+* Each insight should connect **data → interpretation → product implication**.
+* Use **quantitative anchors** (e.g., averages, rankings, percentages) to make statements credible.
+* Avoid jargon; favor **plain, analytical English** that non-technical stakeholders can act on.
+* Emphasize **actionability** — every finding should point to a decision, experiment, or opportunity.
+* The final output should read like a **professional product insights report**, not a technical notebook commentary.
+
+---
+# Independent Analysis Optimized Prompt
+---
+
+You are an expert data analyst and Python practitioner assigned to produce a professional, product-focused analysis of an Airbnb listings dataset. Deliverables must be runnable, well-documented, and written for a **product-oriented audience** (e.g., Airbnb product and business teams).
+
+
+**Inputs**
+
+* Dataset file: `AB_NYC_2019.csv` (Airbnb NYC 2019 listings and activity).
+
+**Primary Deliverables**
+
+1. **Jupyter Notebook** (`analysis.ipynb`) that contains the full updated analysis, code, figures, and narrative. Notebook must run top-to-bottom without errors.
+2. **Overview Markdown** (`overview.md`) — executive summary for product stakeholders (max 2 pages). Each insight must include a recommended product action and a measurable success metric.
+
+**Scope & Goals**
+
+* Produce a comprehensive, product-oriented analysis that answers: who uses listings, where supply is concentrated, what drives price and occupancy, detectable seasonal or geographic patterns, and opportunities for product experimentation to grow bookings or supply quality.
+* Prioritize actionable findings for Airbnb-like product teams. Each finding must map: **data → interpretation → product implication**.
+
+**Notebook requirements (must be explicit and followed)**
+
+* Use pandas, numpy, matplotlib, seaborn, scikit-learn (if modeling).
+* Structure sections with headers and short executive summaries: 1) Setup & Data Ingestion, 2) Data Quality & Cleaning, 3) Descriptive EDA, 4) Geographic Analysis, 5) Pricing & Demand Drivers, 6) Host / Supply Analysis, 7) Predictive Modeling (optional — price or availability), 8) Top 10 Insights & Actions, 9) Appendix (full tables, data dictionary).
+* Code style: concise cells, comments for non-obvious steps, functions for repeated tasks, no hard-coded file paths.
+* Reproducibility: set random seeds; document versions; include small sample run of heavy computations if required.
+* Visualizations: use clear titles, axis labels, and brief captions that state the finding. Include at least one map of listings by neighborhood/borough and one correlation or feature-importance chart for price/availability.
+
+**Analysis expectations**
+
+* Data quality: report missingness, duplicates, anomalous values, and applied fixes with justification.
+* Feature engineering: create and explain derived features that matter to product teams (e.g., price per person, distance to center, host-experience proxy, availability buckets).
+* Metrics & quantitative anchors: include descriptive stats (means, medians, IQR, counts) and percentages for every claim.
+* Statistical checks: where causal language is used, clearly label assumptions and limitations. Use simple regressions or tree models to surface drivers. Report model performance (RMSE for regression; precision/recall for classification).
+* Actionability: for each top insight include a clear product experiment or metric to track (A/B test idea, UI change, supply initiative) and expected direction of impact.
+
+**Deliverable format & acceptance criteria**
+
+* Notebook runs end-to-end and produces `overview.md` automatically (or show how to export).
+* `overview.md` contains: one-paragraph synopsis, top 5 strategic recommendations, 10 prioritized insights (1–2 lines each) with KPI to measure, and a 3-step implementation plan.
+* Final output must be concise and polished — suitable to hand to a PM or head of product.
+
+**Constraints & tone**
+
+* Use an executive, neutral tone in markdown. Keep paragraphs short and actionable. Avoid jargon.
+* Emphasize product implications and experiments over purely technical discussion.
+* If assumptions are made about external data or business context, state them explicitly.
+
+**Optional (value-added)**
+
+* Include a short predictive baseline model (price or bookings) with explanations of business utility.
+* Provide a small dashboard mockup (images or matplotlib figures) showing 3 KPIs to monitor daily.
+
+---
+# Independent Analysis Overview Standardization Prompt
+---
+
+The generated overview is too brief. Attached is an example of an overview  of a similar analysis (airbnb_analysis_overview_v1.md). Update the overview to align with this format. You do not have to follow the format of the example exactly. Base the format on the insights extracted in the Python Notebook, using the example as a reference for the style, structure and tone.
+
+---

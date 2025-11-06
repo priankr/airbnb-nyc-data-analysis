@@ -1,0 +1,76 @@
+---
+# Enhanced Insights Initial Prompt
+---
+
+# Context
+I have a dataset that was analyzed using Python. I have three files for **Dataset**, **Data Analysis**, and **Overview**. I want to use AI to review my original analysis and generate an updated analysis that reveals deeper insights. 
+
+## Inputs
+- **Data Analysis**: A Jupyter Notebook containing the data analysis, along with details about the dataset, the analysis methodology, data analysis results, visualizations, and insights. → airbnb_nyc_data_analysis.ipynb
+- **Overview:** A markdown file containing the summary of the data analysis → airbnb_analysis_overview.md
+
+# Task
+Review the existing data analysis and draw new conclusions based on the results of this analysis. The goal is to reveal interesting patterns, observations, or details that were initially overlooked.  
+
+# Requirements
+- Analyze the existing files provided and understand the initial analysis.
+- Review the analysis methodology documentation and improve the quality of the documentation.
+- Use the initial insights and observations as a reference, and identify **new** insights that were missed in the original analysis. 
+- Focus on highlighting interesting patterns, connections, and observations in the data
+- Do not update the Python code itself. Only update the text in the markdown cells to enhance the readability and to highlight new insights you have spotted. 
+- Do not run a new analysis. Simply review the results and highlight insights recorded in the markdown cells. 
+- The audience for this is a product team and their stakeholders.
+
+## Outputs
+- **Updated Python Data Analysis** - A Jupyter Notebook with the updated markdown cells
+- **Updated Overview** - A markdown file with the updated summary of the new data analysis. 
+
+---
+Enhanced Insights Optimized Prompt
+---
+
+# Objective
+Enhance the insight depth and clarity of an existing Python-based data analysis. The analysis code may be **executed to view results**, but **must not be edited or modified**. The goal is to uncover **previously overlooked insights** and improve the **interpretive and narrative quality** of the findings for a **product-oriented audience** (e.g., Airbnb product and business teams).
+
+## Inputs
+You will receive two files:
+1. **Data Analysis** → `airbnb_nyc_data_analysis.ipynb` (Jupyter Notebook with dataset description, methodology, visualizations, and results)
+2. **Overview** → `airbnb_analysis_overview.md` (summary of the analysis and conclusions)
+
+## Task
+Review and interpret the existing analysis to produce a **refined, insight-rich version** that:
+
+* Highlights new or underexplored **patterns, relationships, and anomalies**.
+* Improves **clarity, structure, and storytelling** in markdown explanations.
+* Strengthens **contextual and actionable interpretation** of key results for business and product stakeholders.
+* Uses outputs and visualizations from the notebook to support deeper insights.
+* Focuses on **how the findings translate into product decisions, user experience improvements, or business strategy**.
+
+
+## Instructions
+-* You **may run** code cells to inspect outputs or confirm interpretations.
+* You **must not modify or add** any Python code.
+* You **should only modify markdown cells** to:
+  * Add new insights discovered through deeper interpretation.
+  * Improve explanation clarity and narrative flow.
+  * Reframe results for relevance to **product management, pricing, or growth** contexts.
+* Treat existing insights as a **foundation** — extend and enrich them rather than restating them.
+
+## Tone and Style Requirements
+
+When revising or adding markdown text:
+
+* Write in a **clear, executive tone** suitable for product and business reviews.
+* Prioritize **readability and structure** — use concise paragraphs, tables, or bullet points where appropriate.
+* Each insight should connect **data → interpretation → product implication**.
+* Use **quantitative anchors** (e.g., averages, rankings, percentages) to make statements credible.
+* Avoid jargon; favor **plain, analytical English** that non-technical stakeholders can act on.
+* Emphasize **actionability** — every finding should point to a decision, experiment, or opportunity.
+* The final output should read like a **professional product insights report**, not a technical notebook commentary.
+
+### Deliverables
+
+1. **Updated Jupyter Notebook** — with revised markdown cells reflecting enhanced, product-ready insights.
+2. **Updated Overview (Markdown)** — a refined overview that clearly communicates the most important findings and their implications for decision-makers.
+
+---

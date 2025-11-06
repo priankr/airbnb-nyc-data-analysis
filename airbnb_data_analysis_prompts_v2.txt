@@ -1,0 +1,161 @@
+---
+# Expanded Analysis Initial Prompt
+---
+
+# Context
+I have a dataset that was analyzed using Python. I have three files for **Dataset**, **Data Analysis**, and **Overview**. I want to use AI to review my original analysis and generate an updated analysis that reveals deeper insights. The goal is to uncover **previously overlooked insights** and improve the **interpretive and narrative quality** of the findings for a **product-oriented audience** (e.g., Airbnb product and business teams).
+
+## Inputs
+- **Dataset**: The raw dataset → AB_NYC_2019.csv
+- **Data Analysis**: A Jupyter Notebook containing the data analysis, along with details about the dataset, the analysis methodology, data analysis results, visualizations, and insights. → airbnb_nyc_data_analysis.ipynb
+- **Overview:** A markdown file containing the summary of the data analysis → airbnb_analysis_overview.m
+
+# Task
+Review the existing data analysis and dataset, and generate an updated analysis, using the initial analysis as a reference. The goal is to improve the quality of insights obtained by having the model conduct the analysis using new techniques to expand upon the insights extracted from the existing analysis.  
+
+
+## Outputs
+- **Updated Python Data Analysis** - A Jupyter Notebook with the updated data analysis.
+- **Updated Overview** - A markdown file with the updated summary of the new data analysis.
+
+
+# Requirements
+- Analyze the existing files, understand the dataset and context from the initial analysis.
+- Review the analysis methodology documentation and improve the quality of the documentation.
+- Use the initial insights and observations as a reference, and identify **new** insights that were missed in the original analysis. 
+- Focus on highlighting interesting patterns, connections, and observations in the data
+- Follow a structured, systematic approach, ensuring all steps are properly documented in the Jupyter Notebook along with the code. Add relevant comments to ensure readability and clarity.
+- Do not restrict yourself to the original analysis methodology. Determine the appropriate methodology based on the dataset.
+- All new analyses and visualizations should be added to the new Jupyter Notebook
+- The audience for this is a product team and their stakeholders. 
+
+
+## Tone and Style Requirements
+
+When revising or adding markdown text:
+
+* Write in a **clear, executive tone** suitable for product and business reviews.
+* Prioritize **readability and structure** — use concise paragraphs, tables, or bullet points where appropriate.
+* Each insight should connect **data → interpretation → product implication**.
+* Use **quantitative anchors** (e.g., averages, rankings, percentages) to make statements credible.
+* Avoid jargon; favor **plain, analytical English** that non-technical stakeholders can act on.
+* Emphasize **actionability** — every finding should point to a decision, experiment, or opportunity.
+* The final output should read like a **professional product insights report**, not a technical notebook commentary.
+
+---
+# Expanded Analysis Optimized Prompt
+---
+
+# **Objective**
+
+You are an expert data analyst and Python practitioner. Your task is to create a **new, comprehensive, and self-contained data analysis** that builds upon an existing project. The new work must **retain the general style and tone** of the original analysis while significantly improving the **depth, rigor, and clarity of insights**. Prioritize analytical quality and interpretive value over strict stylistic replication. The final outputs must be **fully understandable without access to the original files** and tailored for **product and business decision-makers**.
+
+---
+
+# **Inputs**
+
+1. **Dataset:** `AB_NYC_2019.csv` — Raw dataset
+2. **Data Analysis:** `airbnb_nyc_data_analysis.ipynb` — Jupyter Notebook containing dataset description, methodology, visualizations, and results
+3. **Overview:** `airbnb_analysis_overview.md` — Markdown summary of the original analysis and conclusions
+
+---
+
+# **Primary Tasks**
+
+### **1. Understand the Original Analysis**
+
+* Review the original notebook and summary to determine:
+
+  * The **intent and business questions** the analysis aimed to answer.
+  * The **analytical approach and methodology** (data cleaning, transformations, EDA, statistical or ML techniques).
+  * The **intended audience** and communication style.
+  * The **scope and limitations** of the original work.
+* Summarize these findings concisely within the new notebook (e.g., an *“Original Analysis Intent”* section) before presenting the updated work.
+
+---
+
+### **2. Enhance and Expand the Analysis**
+
+* Retain valuable insights and structure where relevant.
+* Strengthen or replace weak or incomplete methods.
+* Explore **new analytical angles** relevant to product and business outcomes — e.g., segmentation, correlation patterns, neighborhood dynamics, pricing drivers, or occupancy trends.
+* Ensure all steps are **reproducible**, **well-documented**, and **logically structured**.
+* Maintain clarity and coherence in the overall flow, adapting the style only when it improves readability or analytical depth.
+
+---
+
+### **3. Produce Self-Contained Deliverables**
+
+* The updated analysis and summary must be **complete and interpretable independently**, without reference to original files.
+* You may reuse or adapt text or concepts from the original work **only to preserve context**, not dependency.
+* Clearly document all new steps and improvements to establish transparency and continuity.
+
+---
+
+# **Deliverables**
+
+### **1. `updated_analysis.ipynb`**
+
+A complete Jupyter Notebook containing:
+
+* **“Original Analysis Intent”** — concise summary of the prior analysis purpose and context.
+* **Full workflow** — data import, cleaning, exploration, and visualization.
+* **Enhanced or new analyses** — using appropriate methods supported by markdown explanations.
+* **Inline commentary** — explain rationale and findings clearly.
+* **“Changes vs Original”** — summarize what was added, improved, or replaced.
+* Logical flow: *context → methodology → exploration → insights → implications.*
+
+---
+
+### **2. `updated_analysis_overview.md`**
+
+A professional, standalone summary that includes:
+
+* **Executive summary** (3–5 key findings).
+* Description of **analytical intent, methodology, and new insights**.
+* Integration of relevant concepts from the original summary, rewritten for clarity and impact.
+* **Actionable implications** for product and business stakeholders.
+* Written in a **clear, structured, executive tone** suitable for leadership audiences.
+
+---
+
+# **Requirements**
+
+* Identify **previously overlooked trends, relationships, and opportunities**.
+* Justify each new analytical step or methodological change.
+* Ensure reproducibility, clarity, and internal consistency between notebook and summary.
+* Use **quantitative anchors** (e.g., averages, rankings, distributions, comparisons).
+* Focus findings on **pricing, demand, customer behavior, and market positioning**.
+* Present insights that guide decisions, experiments, or product strategies.
+
+---
+
+# **Tone & Style Guide (for Markdown and Commentary)**
+
+* **Voice:** Clear, confident, executive.
+* **Structure:** Logical sections; concise paragraphs; use bullet points for readability.
+* **Language:** Plain analytical English — avoid technical jargon.
+* **Actionability:** Each insight should imply a next step or strategic consideration.
+* **Presentation:** Treat the deliverables as **professional product insight reports**, not technical notebooks.
+
+---
+
+# **Output Filenames**
+
+* `updated_analysis.ipynb`
+* `updated_analysis_overview.md`
+
+---
+
+# **Audience**
+
+Product managers, analysts, and business stakeholders seeking actionable, data-driven insights for decision-making.
+
+---
+# Expanded Analysis Overview Standardization Prompt
+---
+
+The generated overview is too brief. Attached is an example of an overview  of a similar analysis (airbnb_analysis_overview_v1.md). Update the overview to align with this format. You do not have to follow the format of the example exactly. Base the format on the insights extracted in the Python Notebook, using the example as a reference for the style, structure and tone.
+
+---
+
