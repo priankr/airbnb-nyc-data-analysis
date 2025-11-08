@@ -1,31 +1,4 @@
 ---
-# Enhanced Insights Initial Prompt
----
-
-# Context
-I have a dataset that was analyzed using Python. I have three files for **Dataset**, **Data Analysis**, and **Overview**. I want to use AI to review my original analysis and generate an updated analysis that reveals deeper insights. 
-
-## Inputs
-- **Data Analysis**: A Jupyter Notebook containing the data analysis, along with details about the dataset, the analysis methodology, data analysis results, visualizations, and insights. → airbnb_nyc_data_analysis.ipynb
-- **Overview:** A markdown file containing the summary of the data analysis → airbnb_analysis_overview.md
-
-# Task
-Review the existing data analysis and draw new conclusions based on the results of this analysis. The goal is to reveal interesting patterns, observations, or details that were initially overlooked.  
-
-# Requirements
-- Analyze the existing files provided and understand the initial analysis.
-- Review the analysis methodology documentation and improve the quality of the documentation.
-- Use the initial insights and observations as a reference, and identify **new** insights that were missed in the original analysis. 
-- Focus on highlighting interesting patterns, connections, and observations in the data
-- Do not update the Python code itself. Only update the text in the markdown cells to enhance the readability and to highlight new insights you have spotted. 
-- Do not run a new analysis. Simply review the results and highlight insights recorded in the markdown cells. 
-- The audience for this is a product team and their stakeholders.
-
-## Outputs
-- **Updated Python Data Analysis** - A Jupyter Notebook with the updated markdown cells
-- **Updated Overview** - A markdown file with the updated summary of the new data analysis. 
-
----
 Enhanced Insights Optimized Prompt
 ---
 
@@ -73,4 +46,30 @@ When revising or adding markdown text:
 1. **Updated Jupyter Notebook** — with revised markdown cells reflecting enhanced, product-ready insights.
 2. **Updated Overview (Markdown)** — a refined overview that clearly communicates the most important findings and their implications for decision-makers.
 
+---
+# Enhanced Insights Initial Prompt
+---
+
+# Context
+I have a dataset that was analyzed using Python. I have three files for **Dataset**, **Data Analysis**, and **Overview**. I want to use AI to review my original analysis and generate an updated analysis that reveals deeper insights. 
+
+## Inputs
+- **Data Analysis**: A Jupyter Notebook containing the data analysis, along with details about the dataset, the analysis methodology, data analysis results, visualizations, and insights. → airbnb_nyc_data_analysis.ipynb
+- **Overview:** A markdown file containing the summary of the data analysis → airbnb_analysis_overview.md
+
+# Task
+Review the existing data analysis and draw new conclusions based on the results of this analysis. The goal is to reveal interesting patterns, observations, or details that were initially overlooked.  
+
+# Requirements
+- Analyze the existing files provided and understand the initial analysis.
+- Review the analysis methodology documentation and improve the quality of the documentation.
+- Use the initial insights and observations as a reference, and identify **new** insights that were missed in the original analysis. 
+- Focus on highlighting interesting patterns, connections, and observations in the data
+- Do not update the Python code itself. Only update the text in the markdown cells to enhance the readability and to highlight new insights you have spotted. 
+- Do not run a new analysis. Simply review the results and highlight insights recorded in the markdown cells. 
+- The audience for this is a product team and their stakeholders.
+
+## Outputs
+- **Updated Python Data Analysis** - A Jupyter Notebook with the updated markdown cells
+- **Updated Overview** - A markdown file with the updated summary of the new data analysis. 
 ---
