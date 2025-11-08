@@ -1,46 +1,4 @@
 ---
-# Independent Analysis Initial Prompt
----
-
-# Context
-I have a **Dataset** that I want to analyze using Python. I want to use AI to analyze this dataset and reveal useful insights. The goal is to produce a professional-grade **Data Analysis**, and **Overview** for a **product-oriented audience** (e.g., Airbnb product and business teams).
-
-## Dataset Context
-Dataset describes the Airbnb listing activity and metrics in NYC, NY for 2019. It includes all needed information to find out more about hosts, geographical availability, necessary metrics to make predictions and draw conclusions.
-
-## Inputs
-- **Dataset**: The raw dataset → AB_NYC_2019.csv 
-
-# Task
-Review the existing dataset and conduct a comprehensive data analysis.
-
-## Outputs
-- **Python Data Analysis** - A Jupyter Notebook with the updated data analysis.
-- **Overview** - A markdown file with the updated summary of the new data analysis.
-
-
-# Requirements
-- Analyze the dataset
-- Focus on highlighting interesting patterns, connections, and observations in the data
-- Follow a structured, systematic approach, ensuring all steps are properly documented in the Jupyter Notebook along with the code. Add relevant comments to ensure readability and clarity.
-- Determine the appropriate methodology based on the dataset.
-- All analyses and visualizations should be added to the Jupyter Notebook
-- The audience for this is a product team and their stakeholders. 
-
-
-## Tone and Style Requirements
-
-When adding markdown text:
-
-* Write in a **clear, executive tone** suitable for product and business reviews.
-* Prioritize **readability and structure** — use concise paragraphs, tables, or bullet points where appropriate.
-* Each insight should connect **data → interpretation → product implication**.
-* Use **quantitative anchors** (e.g., averages, rankings, percentages) to make statements credible.
-* Avoid jargon; favor **plain, analytical English** that non-technical stakeholders can act on.
-* Emphasize **actionability** — every finding should point to a decision, experiment, or opportunity.
-* The final output should read like a **professional product insights report**, not a technical notebook commentary.
-
----
 # Independent Analysis Optimized Prompt
 ---
 
@@ -99,5 +57,47 @@ You are an expert data analyst and Python practitioner assigned to produce a pro
 ---
 
 The generated overview is too brief. Attached is an example of an overview  of a similar analysis (airbnb_analysis_overview_v1.md). Update the overview to align with this format. You do not have to follow the format of the example exactly. Base the format on the insights extracted in the Python Notebook, using the example as a reference for the style, structure and tone.
+
+---
+# Independent Analysis Initial Prompt
+---
+
+# Context
+I have a **Dataset** that I want to analyze using Python. I want to use AI to analyze this dataset and reveal useful insights. The goal is to produce a professional-grade **Data Analysis**, and **Overview** for a **product-oriented audience** (e.g., Airbnb product and business teams).
+
+## Dataset Context
+Dataset describes the Airbnb listing activity and metrics in NYC, NY for 2019. It includes all needed information to find out more about hosts, geographical availability, necessary metrics to make predictions and draw conclusions.
+
+## Inputs
+- **Dataset**: The raw dataset → AB_NYC_2019.csv 
+
+# Task
+Review the existing dataset and conduct a comprehensive data analysis.
+
+## Outputs
+- **Python Data Analysis** - A Jupyter Notebook with the updated data analysis.
+- **Overview** - A markdown file with the updated summary of the new data analysis.
+
+
+# Requirements
+- Analyze the dataset
+- Focus on highlighting interesting patterns, connections, and observations in the data
+- Follow a structured, systematic approach, ensuring all steps are properly documented in the Jupyter Notebook along with the code. Add relevant comments to ensure readability and clarity.
+- Determine the appropriate methodology based on the dataset.
+- All analyses and visualizations should be added to the Jupyter Notebook
+- The audience for this is a product team and their stakeholders. 
+
+
+## Tone and Style Requirements
+
+When adding markdown text:
+
+* Write in a **clear, executive tone** suitable for product and business reviews.
+* Prioritize **readability and structure** — use concise paragraphs, tables, or bullet points where appropriate.
+* Each insight should connect **data → interpretation → product implication**.
+* Use **quantitative anchors** (e.g., averages, rankings, percentages) to make statements credible.
+* Avoid jargon; favor **plain, analytical English** that non-technical stakeholders can act on.
+* Emphasize **actionability** — every finding should point to a decision, experiment, or opportunity.
+* The final output should read like a **professional product insights report**, not a technical notebook commentary.
 
 ---
