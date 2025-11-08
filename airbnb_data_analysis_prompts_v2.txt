@@ -1,48 +1,4 @@
 ---
-# Expanded Analysis Initial Prompt
----
-
-# Context
-I have a dataset that was analyzed using Python. I have three files for **Dataset**, **Data Analysis**, and **Overview**. I want to use AI to review my original analysis and generate an updated analysis that reveals deeper insights. The goal is to uncover **previously overlooked insights** and improve the **interpretive and narrative quality** of the findings for a **product-oriented audience** (e.g., Airbnb product and business teams).
-
-## Inputs
-- **Dataset**: The raw dataset → AB_NYC_2019.csv
-- **Data Analysis**: A Jupyter Notebook containing the data analysis, along with details about the dataset, the analysis methodology, data analysis results, visualizations, and insights. → airbnb_nyc_data_analysis.ipynb
-- **Overview:** A markdown file containing the summary of the data analysis → airbnb_analysis_overview.m
-
-# Task
-Review the existing data analysis and dataset, and generate an updated analysis, using the initial analysis as a reference. The goal is to improve the quality of insights obtained by having the model conduct the analysis using new techniques to expand upon the insights extracted from the existing analysis.  
-
-
-## Outputs
-- **Updated Python Data Analysis** - A Jupyter Notebook with the updated data analysis.
-- **Updated Overview** - A markdown file with the updated summary of the new data analysis.
-
-
-# Requirements
-- Analyze the existing files, understand the dataset and context from the initial analysis.
-- Review the analysis methodology documentation and improve the quality of the documentation.
-- Use the initial insights and observations as a reference, and identify **new** insights that were missed in the original analysis. 
-- Focus on highlighting interesting patterns, connections, and observations in the data
-- Follow a structured, systematic approach, ensuring all steps are properly documented in the Jupyter Notebook along with the code. Add relevant comments to ensure readability and clarity.
-- Do not restrict yourself to the original analysis methodology. Determine the appropriate methodology based on the dataset.
-- All new analyses and visualizations should be added to the new Jupyter Notebook
-- The audience for this is a product team and their stakeholders. 
-
-
-## Tone and Style Requirements
-
-When revising or adding markdown text:
-
-* Write in a **clear, executive tone** suitable for product and business reviews.
-* Prioritize **readability and structure** — use concise paragraphs, tables, or bullet points where appropriate.
-* Each insight should connect **data → interpretation → product implication**.
-* Use **quantitative anchors** (e.g., averages, rankings, percentages) to make statements credible.
-* Avoid jargon; favor **plain, analytical English** that non-technical stakeholders can act on.
-* Emphasize **actionability** — every finding should point to a decision, experiment, or opportunity.
-* The final output should read like a **professional product insights report**, not a technical notebook commentary.
-
----
 # Expanded Analysis Optimized Prompt
 ---
 
@@ -158,4 +114,48 @@ Product managers, analysts, and business stakeholders seeking actionable, data-d
 The generated overview is too brief. Attached is an example of an overview  of a similar analysis (airbnb_analysis_overview_v1.md). Update the overview to align with this format. You do not have to follow the format of the example exactly. Base the format on the insights extracted in the Python Notebook, using the example as a reference for the style, structure and tone.
 
 ---
+# Expanded Analysis Initial Prompt
+---
+
+# Context
+I have a dataset that was analyzed using Python. I have three files for **Dataset**, **Data Analysis**, and **Overview**. I want to use AI to review my original analysis and generate an updated analysis that reveals deeper insights. The goal is to uncover **previously overlooked insights** and improve the **interpretive and narrative quality** of the findings for a **product-oriented audience** (e.g., Airbnb product and business teams).
+
+## Inputs
+- **Dataset**: The raw dataset → AB_NYC_2019.csv
+- **Data Analysis**: A Jupyter Notebook containing the data analysis, along with details about the dataset, the analysis methodology, data analysis results, visualizations, and insights. → airbnb_nyc_data_analysis.ipynb
+- **Overview:** A markdown file containing the summary of the data analysis → airbnb_analysis_overview.m
+
+# Task
+Review the existing data analysis and dataset, and generate an updated analysis, using the initial analysis as a reference. The goal is to improve the quality of insights obtained by having the model conduct the analysis using new techniques to expand upon the insights extracted from the existing analysis.  
+
+
+## Outputs
+- **Updated Python Data Analysis** - A Jupyter Notebook with the updated data analysis.
+- **Updated Overview** - A markdown file with the updated summary of the new data analysis.
+
+
+# Requirements
+- Analyze the existing files, understand the dataset and context from the initial analysis.
+- Review the analysis methodology documentation and improve the quality of the documentation.
+- Use the initial insights and observations as a reference, and identify **new** insights that were missed in the original analysis. 
+- Focus on highlighting interesting patterns, connections, and observations in the data
+- Follow a structured, systematic approach, ensuring all steps are properly documented in the Jupyter Notebook along with the code. Add relevant comments to ensure readability and clarity.
+- Do not restrict yourself to the original analysis methodology. Determine the appropriate methodology based on the dataset.
+- All new analyses and visualizations should be added to the new Jupyter Notebook
+- The audience for this is a product team and their stakeholders. 
+
+
+## Tone and Style Requirements
+
+When revising or adding markdown text:
+
+* Write in a **clear, executive tone** suitable for product and business reviews.
+* Prioritize **readability and structure** — use concise paragraphs, tables, or bullet points where appropriate.
+* Each insight should connect **data → interpretation → product implication**.
+* Use **quantitative anchors** (e.g., averages, rankings, percentages) to make statements credible.
+* Avoid jargon; favor **plain, analytical English** that non-technical stakeholders can act on.
+* Emphasize **actionability** — every finding should point to a decision, experiment, or opportunity.
+* The final output should read like a **professional product insights report**, not a technical notebook commentary.
+---
+
 
